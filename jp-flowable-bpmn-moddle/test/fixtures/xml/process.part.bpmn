@@ -1,0 +1,6 @@
+<process xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+         xmlns:flowable="http://flowable.org/bpmn"
+         flowable:candidateStarterUsers="userInGroup2"
+         flowable:candidateStarterGroups="group1, group2, group3"
+         flowable:versionTag="1.0.0" >
+</process>

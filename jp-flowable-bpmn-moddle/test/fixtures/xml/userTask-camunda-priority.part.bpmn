@@ -1,0 +1,4 @@
+<userTask
+  xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+  xmlns:flowable="http://flowable.org/bpmn"
+  flowable:priority="${ priority }" />

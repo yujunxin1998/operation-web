@@ -1,0 +1,13 @@
+<flowable:formProperty xmlns:flowable="http://flowable.org/bpmn"
+  id="longProperty"
+  name="Property"
+  type="long"
+  required="true"
+  readable="true"
+  writable="true"
+  variable="SpeakerName"
+  expression="#{address.street}"
+  datePattern="dd-MM-yyyy hh:mm"
+  default="42"
+/>
+

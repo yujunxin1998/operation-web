@@ -1,0 +1,3 @@
+<flowable:properties xmlns:flowable="http://flowable.org/bpmn">
+  <flowable:property id="p1" name="foo" value="property1"/>
+</flowable:properties>

@@ -1,0 +1,10 @@
+<flowable:outputParameter xmlns:flowable="http://flowable.org/bpmn"
+                         name="var1">
+  <flowable:list>
+    <flowable:value>constantStringValue</flowable:value>
+    <flowable:value>${ 'elValue' }</flowable:value>
+    <flowable:script scriptFormat="Groovy">
+      return "scriptValue";
+    </flowable:script>
+  </flowable:list>
+</flowable:outputParameter>

@@ -1,0 +1,5 @@
+<bpmn:multiInstanceLoopCharacteristics xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                                       xmlns:flowable="http://flowable.org/bpmn"
+                                       isSequential="true"
+                                       flowable:collection="5"
+                                       flowable:elementVariable="5" />

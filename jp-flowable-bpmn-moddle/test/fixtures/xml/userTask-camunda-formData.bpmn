@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:flowable="http://flowable.org/bpmn" targetNamespace="test">
+  <process id="FormDataTest.testFormFieldSubmit">
+    <startEvent id="start" />
+    <sequenceFlow sourceRef="start" targetRef="usertask" />
+    <userTask id="usertask" name="Task" flowable:candidateGroups="dummy">
+      <extensionElements>
+        <flowable:formData>
+          <flowable:formField id="stringField" label="String Field" type="string" defaultValue="someString">
+            <flowable:validation>
+              <flowable:constraint name="maxlength" config="10" />
+              <flowable:constraint name="minlength" config="5" />
+            </flowable:validation>
+          </flowable:formField>
+          <flowable:formField
+              id="enumField" label="Enum Field" type="enum"
+              defaultValue="a">
+              <flowable:value id="a" name="A"/>
+              <flowable:value id="b" name="B"/>
+              <flowable:value id="c" name="C"/>
+          </flowable:formField>
+          <flowable:formField id="longField" label="Long Field" type="long" defaultValue="5">
+            <flowable:properties>
+              <flowable:property id="p1" name="foo" value="property1"/>
+              <flowable:property id="p2" name="bar" value="property2"/>
+            </flowable:properties>
+            <flowable:validation>
+              <flowable:constraint name="max" config="10" />
+              <flowable:constraint name="min" config="3" />
+            </flowable:validation>
+          </flowable:formField>
+          <flowable:formField id="customField" label="Custom Field" type="string">
+            <flowable:validation>
+              <flowable:constraint name="validator" config="org.flowable.bpm.engine.test.api.form.CustomValidator" />
+            </flowable:validation>
+          </flowable:formField>
+        </flowable:formData>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow sourceRef="usertask" targetRef="task2" />
+    <userTask id="task2" />
+  </process>
+</definitions>

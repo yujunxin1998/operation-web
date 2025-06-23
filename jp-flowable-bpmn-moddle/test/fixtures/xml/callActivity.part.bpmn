@@ -1,0 +1,12 @@
+<callActivity xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+              xmlns:flowable="http://flowable.org/bpmn"
+              flowable:calledElementBinding="version"
+              flowable:calledElementVersion="1"
+              flowable:calledElementVersionTag="version1"
+              flowable:calledElementTenantId="tenant1"
+              flowable:caseRef="oneTaskCase"
+              flowable:caseBinding="version"
+              flowable:caseVersion="2"
+              flowable:caseTenantId="tenant1"
+              flowable:variableMappingClass="org.flowable.bpm.test.Test"
+              flowable:variableMappingDelegateExpression="${test}"/>

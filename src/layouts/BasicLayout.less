@@ -1,0 +1,109 @@
+@import "~ant-design-vue/es/style/themes/default.less";
+
+.ant-pro-global-header-index-right {
+  margin-right: 8px;
+
+  &.ant-pro-global-header-index-dark {
+    .ant-pro-global-header-index-action {
+      color: hsla(0, 0%, 100%, .85);
+
+      &:hover {
+        background: #4778C7;
+      }
+    }
+  }
+
+  .ant-pro-account-avatar {
+    .antd-pro-global-header-index-avatar {
+      margin: ~'calc((@{layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .menu {
+    .anticon {
+      margin-right: 8px;
+    }
+
+    .ant-dropdown-menu-item {
+      min-width: 100px;
+    }
+  }
+}
+
+.ant-pro-basicLayout-children-content-wrap {
+  height: calc(100% - 96px);
+}
+.ant-pro-grid-content {
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+// 以下为自定义样式
+.ant-pro-sider-menu-sider.light .ant-pro-sider-menu-logo h1{
+  color: #666666 !important;
+}
+
+.ant-menu-submenu-selected {
+  color: #FFFFFF;
+  background: #4778C7;
+
+  & .ant-menu-submenu-title,
+  & .ant-menu-submenu-title:hover{
+    color: #FFFFFF;
+  }
+
+  &.ant-menu-submenu > .ant-menu{
+    background-color: #EFF5FF;
+  }
+
+  & .ant-menu-submenu{
+    & .ant-menu-submenu-title:hover{
+      color: #4778C7;
+
+      & .ant-menu-submenu-arrow::before,
+      & .ant-menu-submenu-arrow::after{
+        background: linear-gradient(to right, #4778C7, #4778C7) !important;
+      }
+    }
+
+    & .ant-menu-submenu-title{
+      color: rgba(0, 0, 0, 0.65);
+
+      & .ant-menu-submenu-arrow::before,
+      & .ant-menu-submenu-arrow::after{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)) !important;
+      }
+    }
+  }
+
+  & .ant-menu-submenu-selected{
+    color: #4778C7;
+    background: #EFF5FF;
+
+    & .ant-menu-submenu-title,
+    & .ant-menu-submenu-title:hover{
+      color: #4778C7;
+
+      & .ant-menu-submenu-arrow::before,
+      & .ant-menu-submenu-arrow::after{
+        background: linear-gradient(to right, #4778C7, #4778C7) !important;
+      }
+    }
+  }
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: #EFF5FF !important;
+}
+
+.ant-menu-submenu-selected .ant-menu-submenu-title .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-selected .ant-menu-submenu-title .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-selected .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-selected .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after{
+  background: linear-gradient(to right, #FFFFFF, #FFFFFF) !important;
+}

@@ -1,0 +1,6 @@
+<flowable:potentialStarter xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                          xmlns:flowable="http://flowable.org/bpmn">
+  <resourceAssignmentExpression>
+    <formalExpression>group2, group(group3), user(user3)</formalExpression>
+  </resourceAssignmentExpression>
+</flowable:potentialStarter>

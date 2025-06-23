@@ -1,0 +1,6 @@
+<flowable:executionListener xmlns:flowable="http://flowable.org/bpmn"
+  event="start"
+  class="my.company.Listener" >
+  <flowable:field name="fieldOne" stringValue="myString" />
+  <flowable:field name="fieldTwo" expression="${myExpression}" />
+</flowable:executionListener>

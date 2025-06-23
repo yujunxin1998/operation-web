@@ -1,0 +1,6 @@
+<businessRuleTask xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:flowable="http://flowable.org/bpmn"
+             decisionRef="myDecision"
+             flowable:decisionRefBinding="version"
+             flowable:decisionRefVersion="1"
+             flowable:decisionRefTenantId="tenant1"/>

@@ -1,0 +1,5 @@
+<flowable:formProperty xmlns:flowable="http://flowable.org/bpmn">
+  <flowable:value id="false" name="Yes"/>
+  <flowable:value id="true" name="No"/>
+</flowable:formProperty>
+

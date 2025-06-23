@@ -1,0 +1,5 @@
+<scriptTask xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+            xmlns:flowable="http://flowable.org/bpmn"
+            scriptFormat="python"
+            flowable:resource="some-file.py"
+            flowable:resultVariable="result" />

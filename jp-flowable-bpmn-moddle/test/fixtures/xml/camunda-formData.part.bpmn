@@ -1,0 +1,18 @@
+<flowable:formData xmlns:flowable="http://flowable.org/bpmn">
+  <flowable:formField
+      id="stringField"
+      label="String Field"
+      type="string"
+      defaultValue="someString">
+    <flowable:properties>
+      <flowable:property id="p1" value="property1"/>
+      <flowable:property id="p2" value="property2"/>
+    </flowable:properties>
+    <flowable:validation>
+      <flowable:constraint name="readonly" />
+      <flowable:constraint name="minlength" config="5" />
+    </flowable:validation>
+    <flowable:value id="a" name="A"/>
+    <flowable:value id="b" name="B"/>
+  </flowable:formField>
+</flowable:formData>

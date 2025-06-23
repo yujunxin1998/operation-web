@@ -1,0 +1,4 @@
+<flowable:inputParameter xmlns:flowable="http://flowable.org/bpmn"
+                        name="foo">
+  BAR
+</flowable:inputParameter>

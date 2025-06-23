@@ -1,0 +1,7 @@
+<flowable:connector xmlns:flowable="http://flowable.org/bpmn">
+  <flowable:connectorId>connector</flowable:connectorId>
+  <flowable:inputOutput>
+    <flowable:inputParameter name="in"/>
+    <flowable:outputParameter name="out"/>
+  </flowable:inputOutput>
+</flowable:connector>

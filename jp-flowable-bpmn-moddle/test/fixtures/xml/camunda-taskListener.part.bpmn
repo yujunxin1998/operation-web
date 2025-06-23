@@ -1,0 +1,5 @@
+<flowable:taskListener xmlns:flowable="http://flowable.org/bpmn"
+  event='create'
+  class='org.flowable.bpm.engine.test.bpmn.usertask.UserTaskTestCreateTaskListener'
+  delegateExpression="${myTaskListener}"
+  expression="${myTaskListener.notify(task, task.eventName)}" />
