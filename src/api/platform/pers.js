@@ -277,10 +277,19 @@ export function deleteRoles (parameter = {}) {
 }
 
 export function selectPersList (parameter = {}) {
+  // 处理分页参数，将前端的pageIndex转换为后端需要的pageNum
+  const requestData = { ...parameter }
+  if (parameter.page) {
+    requestData.pageNum = parameter.page.pageIndex || parameter.page.current || 1
+    requestData.pageSize = parameter.page.pageSize || 20
+    // 删除page对象，避免传递不需要的参数
+    delete requestData.page
+  }
+
   return request({
     url: PersApi.SelectPersList,
     method: 'post',
-    data: parameter
+    data: requestData
   })
 }
 

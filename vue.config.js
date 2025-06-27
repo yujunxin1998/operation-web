@@ -123,7 +123,7 @@ const vueConfig = {
     },
     proxy: {
       '/auth': {
-        target: 'http://192.168.60.105:8080',
+        target: 'http://localhost:8080',
         changeOrigin: true
       },
       '/diit-project': {

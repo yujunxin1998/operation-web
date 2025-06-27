@@ -44,7 +44,9 @@ export default {
   data () {
     return {
       persParams: {
-        roleId: this.roleId
+        roleId: this.roleId,
+        username: '',
+        name: ''
       },
       persColumns: [
         {
@@ -86,7 +88,7 @@ export default {
       ],
       searchItems: [
         {
-          id: 'loginName',
+          id: 'username',
           label: '账号',
           type: 'input'
         },

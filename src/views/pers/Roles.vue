@@ -218,7 +218,7 @@ export default {
       persParams: {
         roleId: '',
         username: '',
-        nickname: ''
+        name: '' // 修改为name字段，符合Java实体类定义
       },
       selectRoleId: '',
       selectPersRows: [],
@@ -544,7 +544,7 @@ export default {
         if (!error) {
           this.persParams.roleId = this.selectRoleId
           this.persParams.username = values.username || ''
-          this.persParams.nickname = values.nickname || ''
+          this.persParams.name = values.nickname || '' // 将前端nickname字段映射为后端name字段，符合Java实体类定义
           return new Promise(async (resolve, reject) => {
             if (this.selectRoleId) {
               await this.$refs.persList.getListData()
